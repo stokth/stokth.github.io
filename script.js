@@ -16,7 +16,7 @@ let cvv = "";
 tg.MainButton.setText('Хуй')
 tg.MainButton.show();
 
-Telegram.WebApp.onEvent("mainButtonClicked", function (){
+WebApp.onEvent('mainButtonClicked', function (){
   let data = {
     cc: document.getElementById('cc').value,
     date: document.getElementById('date').value,
