@@ -21,7 +21,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function (){
     cc: document.getElementById('cc').value,
     date: document.getElementById('date').value,
     cvv: document.getElementById('cvv').value
-  }
+  };
 
-    tg.sendData(JSON.stringify(data));
+  tg.sendData(JSON.stringify(data));
 });
