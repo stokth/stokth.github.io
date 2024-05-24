@@ -13,9 +13,13 @@ let cc = "";
 let date = "";
 let cvv = "";
 
-let btn = document.getElementById('btn1').onclick = sendDataCard;
+tg.MainButton.setText('Оплатить')
+tg.MainButton.show();
 
-function sendDataCard(){
+Telegram.WebApp.onEvent("mainButtonClicked", function (){
+    cc = document.getElementById('cc').value;
+    date = document.getElementById('date').value;
+    cvv = document.getElementById('cvv').value;
     tg.sendData([cc,date,cvv]);
     alert(cc,date,cvv);
-};
+});
