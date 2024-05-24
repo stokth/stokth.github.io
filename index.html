@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <style>
+        @font-face{
+            font-family: 'Tink';
+            src: local('Tink') url('assets/fonts/TinkoffSans-Regular.ttf') format('ttf');
+        }
+
+        @font-face{
+            font-family: 'Tink Bold';
+            src: local('Tink Bold') url('assets/fonts/TinkoffSans-Bold.ttf') format('ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-weight: 200;
+            font-family: 'Tink Bold', sans-serif;
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
+        }
+        
+        .cc{
+            margin-top: 20px;
+            margin-bottom: 5px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .date{
+            width: 140px;
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .cvv{
+            margin-top: 20px;
+            width: 140px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .forms{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .btn1{
+            margin-top: 25px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="forms">
+        <div class="title">
+            <h2>Пополнение</h2>
+        </div>
+        <div class="data">
+            <input class="cc" type="text" placeholder="Номер карты"><br>
+            <div class="zero">
+                <input class="date" type="text" placeholder="MM/YY">
+                <input class="cvv" type="password" placeholder="CVV"><br>
+            </div>
+            <button class="btn1">Привет</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
