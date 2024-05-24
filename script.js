@@ -13,7 +13,7 @@ let cc = "";
 let date = "";
 let cvv = "";
 
-tg.MainButton.setText('Хуй')
+tg.MainButton.setText('Пидор')
 tg.MainButton.show();
 
 WebApp.onEvent('mainButtonClicked', function (){
